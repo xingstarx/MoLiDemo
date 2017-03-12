@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="moli.star.com.molidemo.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/left_panel"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@android:color/black"
+            android:id="@+id/left_recycler_view"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@drawable/ic_view_top_shadow"
+            android:id="@+id/content_recycler_view"
+            android:layout_width="match_parent"
+            android:clipChildren="false"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
